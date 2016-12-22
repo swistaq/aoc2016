@@ -32,7 +32,7 @@ def move(string):
         if z == 'D':
             if x < 2:
                 x += 1
-    print arr[x][y]
+    print(arr[x][y])
 
 
 def move2(string):
@@ -55,7 +55,7 @@ def move2(string):
             if x < 4:
                 if arr2[x+1][y] is not None:
                     x += 1
-    print arr2[x][y]
+    print(arr2[x][y])
 
 
 if __name__ == "__main__":

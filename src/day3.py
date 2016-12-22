@@ -10,7 +10,7 @@ def solve1():
         if int(vals[0]) + int(vals[1]) > int(vals[2]) and int(vals[1]) + int(vals[2]) > int(vals[0]) and int(
                 vals[0]) + int(vals[2]) > int(vals[1]):
             i += 1
-    print i
+    print(i)
     infile.close()
 
 
@@ -27,7 +27,7 @@ def solve2():
     for (a, b, c) in triangles:
         if isvalid(int(a), int(b), int(c)):
             i += 1
-    print i
+    print(i)
 
 
 def isvalid(a, b, c):
