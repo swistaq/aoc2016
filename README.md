@@ -23,4 +23,12 @@ The only requirement is that they work.
 - [x] Part One - Given the actual Door ID, what is the password?
 - [x] Part Two - Given the actual Door ID and this new method, what is the password?
 
+#### Day 6: Signals and Noise
+- [x] Part One - Given the recording in your puzzle input, what is the error-corrected version of the message being sent?
+- [x] Part Two - Given the recording in your puzzle input and this new decoding methodology, what is the original message that Santa is trying to send?
+
+#### Day 7: Internet Protocol Version 7
+- [x] Part One - How many IPs in your puzzle input support TLS?
+- [x] Part Two - How many IPs in your puzzle input support SSL?
+
 this beautiful list was stolen from mkierc
