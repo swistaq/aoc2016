@@ -2,7 +2,6 @@
 These solutions are written quickly and with no regard for any rules or coding practices.
 The only requirement is that they work.
 
-Stolen from mkierc
 ### Challenges
 #### Day 1: No Time for a Taxicab
 - [x] Part One - How many blocks away is Easter Bunny HQ?
@@ -23,3 +22,5 @@ Stolen from mkierc
 #### Day 5: How About a Nice Game of Chess?
 - [x] Part One - Given the actual Door ID, what is the password?
 - [x] Part Two - Given the actual Door ID and this new method, what is the password?
+
+this beautiful list was stolen from mkierc
