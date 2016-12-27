@@ -32,9 +32,12 @@ The only requirement is that they work.
 - [x] [Part Two] - How many IPs in your puzzle input support SSL?
 
 #### [Day 8: Two-Factor Authentication](src/day8.py)
-- [x] Part One - How many pixels should be lit?]
+- [x] Part One - How many pixels should be lit?
 - [x] Part Two - After you swipe your card, what code is the screen trying to display?
 
+#### [Day 9: Explosives in Cyberspace](src/day9.py)
+- [x] What is the decompressed length of the file?
+- [x] What is the decompressed length of the file using this improved format?
 
 
 <h6>this beautiful list was stolen from mkierc</h6>
