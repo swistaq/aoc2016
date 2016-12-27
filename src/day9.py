@@ -9,7 +9,6 @@ def parse(str):
 
 
 def parsesub(input):
-    print(input)
     length = 0
     offset = 0
     while True:
@@ -32,7 +31,7 @@ def parsesub(input):
     return length
 
 
-def solve1(filename):
+def solve(filename, switch):
     with open(filename) as infile:
         length = 0
         while True:
@@ -45,32 +44,14 @@ def solve1(filename):
                     next_char = infile.read(1)
                     buff += next_char
                 (x, y) = parse(buff)
-                infile.read(x)
-                length += x * y
+                if switch:
+                    length += y * parsesub(infile.read(x))
+                else:
+                    infile.read(x)
+                    length += y * x
             else:
                 length += 1
     return length
-
-
-def solve2(filename):
-    with open(filename) as infile:
-        length = 0
-        while True:
-            buff = infile.read(1)
-            if not buff:
-                break
-            if buff == '(':
-                next_char = ""
-                while next_char != ')':
-                    next_char = infile.read(1)
-                    buff += next_char
-                (x, y) = parse(buff)
-                print(buff)
-                length += y * parsesub(infile.read(x))
-            else:
-                length += 1
-    return length
-
 
 if __name__ == "__main__":
-    print(solve2("resources/day9"))
+    print(solve("resources/day9", False))
