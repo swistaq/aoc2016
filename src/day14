@@ -1,0 +1,46 @@
+import hashlib
+import re
+
+keys = []
+# since we're checking the next 1000 hashes which we will later iterate over again it's a good idea to save them for later, especially for part 2
+hashes = []
+salt = "ihaygndm"
+
+
+def hash_string(input_string: str, times=1):
+    for x in range(times):
+        input_string = hashlib.md5(input_string.encode('utf-8')).hexdigest().lower()
+    return input_string
+
+
+i = 0
+done = False
+while not done:
+    if hashes.__len__() < i + 1:
+        hash_value = hash_string(salt + str(i), times=2017)
+        hashes.append(hash_value)
+    else:
+        hash_value = hashes[i]
+    trigram = None
+    try:
+        trigram = \
+            [k for k in [hash_value[i:i + 3] for i in range(0, hash_value.__len__() - 2)] if k[0] == k[1] == k[2]][0]
+    except IndexError:  # thrown when no trigram found
+        pass
+    if trigram is not None:  # a trigram was found
+        valid = False
+        j = 1
+        while j <= 1000 and not valid:
+            if hashes.__len__() < i + j + 1:
+                candidate = hash_string(salt + str(i + j), times=2017)
+                hashes.append(candidate)
+            else:
+                candidate = hashes[i + j]
+            if re.findall("([" + trigram[0] + "]){5}", candidate).__len__() > 0:
+                valid = True
+                print(i, hash_value)
+                keys.append((i, hash_value))
+                if keys.__len__() == 64:
+                    done = True
+            j += 1
+    i += 1
