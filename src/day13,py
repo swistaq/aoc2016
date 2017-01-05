@@ -1,0 +1,37 @@
+target_x = 31
+target_y = 39
+MAZE_WIDTH = 60
+MAZE_HEIGHT = 60
+MAX_DEPTH = 150
+values = [[999 for col in range(MAZE_WIDTH)] for row in range(MAZE_HEIGHT)]
+
+
+def value(x, y, magic_no):
+    return x * x + 3 * x + 2 * x * y + y + y * y + magic_no
+
+
+def is_valid(x, y, magic_no=1352):
+    return MAZE_HEIGHT > x >= 0 and MAZE_WIDTH > y >= 0 and bin(value(x, y, magic_no)).count('1') % 2 == 0
+
+
+def step(x: int, y: int, path: int):
+    if path < MAX_DEPTH:
+        for delta in [-1, 1]:
+            if values[x + delta][y] > path + 1 and is_valid(x + delta, y):
+                values[x + delta][y] = path + 1
+                step(x + delta, y, path + 1)
+            if values[x][y + delta] > path + 1 and is_valid(x, y + delta):
+                values[x][y + delta] = path + 1
+                step(x, y + delta, path + 1)
+
+
+step(1, 1, 0)
+print(values[31][39])
+
+# PART2
+i = 0
+for x in range(MAZE_HEIGHT):
+    for y in range(MAZE_WIDTH):
+        if values[x][y] <= 50:
+            i += 1
+print(i)
