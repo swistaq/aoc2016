@@ -28,8 +28,8 @@ The only requirement is that they work.
 - [x] Part Two - Given the recording in your puzzle input and this new decoding methodology, what is the original message that Santa is trying to send?
 
 #### [Day 7: Internet Protocol Version 7](src/day7.py)
-- [x] [Part One] - How many IPs in your puzzle input support TLS?
-- [x] [Part Two] - How many IPs in your puzzle input support SSL?
+- [x] Part One - How many IPs in your puzzle input support TLS?
+- [x] Part Two - How many IPs in your puzzle input support SSL?
 
 #### [Day 8: Two-Factor Authentication](src/day8.py)
 - [x] Part One - How many pixels should be lit?
