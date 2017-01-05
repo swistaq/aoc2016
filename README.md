@@ -51,9 +51,12 @@ The only requirement is that they work.
 - [x] What value is left in register a?
 - [x] If you instead initialize register c to be 1, what value is now left in register a?
 
-#### [Day 13: Leonardo's Monorail](src/day12.py)
+#### [Day 13: A Maze of Twisty Little Cubicles](src/day13.py)
 - [x] What is the fewest number of steps required for you to reach 31,39?
 - [x] How many locations (distinct x,y coordinates, including your starting location) can you reach in at most 50 steps?
 
+#### [Day 14: One-Time Pad](src/day14.py)
+- [x] What index produces your 64th one-time pad key?
+- [x] What index produces your 64th one-time pad key with 2017 hashings?
 
 <h6>this beautiful list was stolen from mkierc</h6>
