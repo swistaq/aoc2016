@@ -39,5 +39,15 @@ The only requirement is that they work.
 - [x] What is the decompressed length of the file?
 - [x] What is the decompressed length of the file using this improved format?
 
+#### [Day 10: Balance Bots](src/day10.py)
+- [x] What is the number of the bot that is responsible for comparing value-61 microchips with value-17 microchips?
+- [x] What do you get if you multiply together the values of one chip in each of outputs 0, 1, and 2?
+
+#### Day 11: Radioisotope Thermoelectric Generators
+- [] What is the minimum number of steps required to bring all of the objects to the fourth floor?
+
+#### [Day 12: Leonardo's Monorail](src/day12.py)
+- [x] What value is left in register a?
+- [x] If you instead initialize register c to be 1, what value is now left in register a?
 
 <h6>this beautiful list was stolen from mkierc</h6>
