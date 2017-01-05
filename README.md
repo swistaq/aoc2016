@@ -36,27 +36,27 @@ The only requirement is that they work.
 - [x] Part Two - After you swipe your card, what code is the screen trying to display?
 
 #### [Day 9: Explosives in Cyberspace](src/day9.py)
-- [x] What is the decompressed length of the file?
-- [x] What is the decompressed length of the file using this improved format?
+- [x] Part One - What is the decompressed length of the file?
+- [x] Part Two - What is the decompressed length of the file using this improved format?
 
 #### [Day 10: Balance Bots](src/day10.py)
-- [x] What is the number of the bot that is responsible for comparing value-61 microchips with value-17 microchips?
-- [x] What do you get if you multiply together the values of one chip in each of outputs 0, 1, and 2?
+- [x] Part One - What is the number of the bot that is responsible for comparing value-61 microchips with value-17 microchips?
+- [x] Part Two - What do you get if you multiply together the values of one chip in each of outputs 0, 1, and 2?
 
 #### Day 11: Radioisotope Thermoelectric Generators
-- [ ] What is the minimum number of steps to bring all of the objects to the fourth floor?
-- [ ] What is the minimum number of steps to bring objects, including four new ones, to the fourth floor?
+- [ ] Part One - What is the minimum number of steps to bring all of the objects to the fourth floor?
+- [ ] Part Two - What is the minimum number of steps to bring objects, including four new ones, to the fourth floor?
 
 #### [Day 12: Leonardo's Monorail](src/day12.py)
-- [x] What value is left in register a?
-- [x] If you instead initialize register c to be 1, what value is now left in register a?
+- [x] Part One - What value is left in register a?
+- [x] Part Two - If you instead initialize register c to be 1, what value is now left in register a?
 
 #### [Day 13: A Maze of Twisty Little Cubicles](src/day13.py)
-- [x] What is the fewest number of steps required for you to reach 31,39?
-- [x] How many locations (distinct x,y coordinates, including your starting location) can you reach in at most 50 steps?
+- [x] Part One - What is the fewest number of steps required for you to reach 31,39?
+- [x] Part Two - How many locations (distinct x,y coordinates, including your starting location) can you reach in at most 50 steps?
 
 #### [Day 14: One-Time Pad](src/day14.py)
-- [x] What index produces your 64th one-time pad key?
-- [x] What index produces your 64th one-time pad key with 2017 hashings?
+- [x] Part One - What index produces your 64th one-time pad key?
+- [x] Part Two - What index produces your 64th one-time pad key with 2017 hashings?
 
 <h6>this beautiful list was stolen from mkierc</h6>
