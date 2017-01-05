@@ -44,7 +44,8 @@ The only requirement is that they work.
 - [x] What do you get if you multiply together the values of one chip in each of outputs 0, 1, and 2?
 
 #### Day 11: Radioisotope Thermoelectric Generators
-- [] What is the minimum number of steps required to bring all of the objects to the fourth floor?
+- [ ] What is the minimum number of steps to bring all of the objects to the fourth floor?
+- [ ] What is the minimum number of steps to bring objects, including four new ones, to the fourth floor?
 
 #### [Day 12: Leonardo's Monorail](src/day12.py)
 - [x] What value is left in register a?
