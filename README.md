@@ -64,4 +64,4 @@ The only requirement is that they work.
 - [x] Part Two - With this new disc what is the first time you can press the button to get a capsule?
 
 
-<h6>this beautiful list was stolen from mkierc</h6>
+<h6>this beautiful list was stolen from [mkierc](https://github.com/mkierc/)</h6>
