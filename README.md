@@ -59,4 +59,9 @@ The only requirement is that they work.
 - [x] Part One - What index produces your 64th one-time pad key?
 - [x] Part Two - What index produces your 64th one-time pad key with 2017 hashings?
 
+#### [Day 15: Timing is Everything](src/day15.py)
+- [x] Part One - What is the first time you can press the button to get a capsule?
+- [x] Part Two - With this new disc what is the first time you can press the button to get a capsule?
+
+
 <h6>this beautiful list was stolen from mkierc</h6>
