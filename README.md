@@ -63,5 +63,10 @@ The only requirement is that they work.
 - [x] Part One - What is the first time you can press the button to get a capsule?
 - [x] Part Two - With this new disc what is the first time you can press the button to get a capsule?
 
+#### [Day 16: Dragon Checksum](src/day16.py)
+- [x] Part One - What is the correct checksum for this disk?
+- [x] Part Two - What is the correct checksum for this (bigger) disk?
+
+
 
 this beautiful list was stolen from [mkierc](https://github.com/mkierc/)
