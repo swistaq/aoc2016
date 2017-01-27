@@ -67,6 +67,9 @@ The only requirement is that they work.
 - [x] Part One - What is the correct checksum for this disk?
 - [x] Part Two - What is the correct checksum for this (bigger) disk?
 
+#### [Day 17: Two Steps Forward](src/day17.py)
+- [x] Part One - Given your vault's passcode, what is the shortest path (the actual path, not just the length) to reach the vault?
+- [x] Part Two - What is the length of the longest path that reaches the vault?
 
 
 this beautiful list was stolen from [mkierc](https://github.com/mkierc/)
