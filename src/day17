@@ -1,0 +1,54 @@
+import hashlib
+
+seed = "dmypynyp"
+validchars = ['b', 'c', 'd', 'e', 'f']
+paths = []
+
+
+def getvalid(tohash: str):
+    valid = []
+    m = hashlib.md5(tohash.encode('utf-8')).hexdigest()
+    if m[0] in validchars:
+        valid.append('U')
+    if m[1] in validchars:
+        valid.append('D')
+    if m[2] in validchars:
+        valid.append('L')
+    if m[3] in validchars:
+        valid.append('R')
+    return valid
+
+
+def step(path: str, x: int, y: int, steps=0):
+    # if steps > 15:
+    #     return
+    candidates = getvalid(seed+path)
+    # out of bounds -> return
+    if x < 0 or x > 3 or y < 0 or y > 3:
+        return
+    if (x, y) == (3, 3):
+        paths.append(path)
+        return
+    # no more steps can be made from current location
+    if candidates.__len__() == 0:
+        return
+    for k in candidates:
+        dx = 0
+        dy = 0
+        if k == 'U':
+            dx = -1
+        if k == 'D':
+            dx = 1
+        if k == 'R':
+            dy = 1
+        if k == 'L':
+            dy = -1
+        step(path+k, x + dx, y + dy, steps+1)
+
+
+if __name__ == "__main__":
+    part2 = True
+    step('', 0, 0)
+    paths.sort(key=lambda x: x.__len__(), reverse=part2)
+    print(paths[0] if not part2 else [k.__len__() for k in paths][0])
+    # print(sorted(paths, key=lambda x: x.__len__(), reverse=part2))
