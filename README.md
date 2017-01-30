@@ -71,5 +71,8 @@ The only requirement is that they work.
 - [x] Part One - Given your vault's passcode, what is the shortest path (the actual path, not just the length) to reach the vault?
 - [x] Part Two - What is the length of the longest path that reaches the vault?
 
+#### [Day 18: Like a Rogue](src/day17.py)
+- [x] Part One - Starting with the map in your puzzle input, in a total of 40 rows (including the starting row), how many safe tiles are there?
+- [x] Part Two - How many safe tiles are there in a total of 400000 rows?
 
 this beautiful list was stolen from [mkierc](https://github.com/mkierc/)
