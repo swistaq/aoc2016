@@ -1,0 +1,14 @@
+currrow = '^^.^..^.....^..^..^^...^^.^....^^^.^.^^....^.^^^...^^^^.^^^^.^..^^^^.^^.^.^.^.^.^^...^^..^^^..^.^^^^'
+dot_count = 0
+for i in range(0, 400000):
+    dot_count += currrow.count('.')
+    tmp = '.' + currrow + '.'
+    new_row = ''
+    for k in range(1, tmp.__len__()-1):
+        cut = tmp[k - 1:k + 2]
+        if cut == '^^.' or cut == '.^^' or cut == '^..' or cut == '..^':
+            new_row += '^'
+        else:
+            new_row += '.'
+    currrow = new_row
+print(dot_count)
